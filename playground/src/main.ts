@@ -47,7 +47,7 @@ import { CustomController } from '../../src'
   cube.initRigidBody({
     rigidBodyType: FRigidBodyType.FIXED,
   })
-  cube.controller = new CustomController({ component: cube })
+  cube.addController(new CustomController({ component: cube }))
   scene.addComponent(cube)
 
   // Add orbital camera controls
